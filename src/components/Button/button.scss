@@ -1,0 +1,23 @@
+.btn {
+  font-family: var(--chi);
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--theta);
+  transition: all 1s ease-out;
+}
+
+.btn:hover {
+  background-image: none;
+}
+
+.btn--primary--solid {
+  color: var(--alpha);
+  background-image: linear-gradient(to left, var(--eta), var(--zeta));
+  border-radius: 5rem;
+  border: none;
+}
+
+.btn--large {
+  padding: 1.5rem 10rem;
+  font-size: 1.8rem;
+}

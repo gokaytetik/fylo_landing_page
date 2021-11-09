@@ -12,15 +12,19 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 2rem; // 20px
+  font-size: 1.6rem; // 16px
   a,
   a:link,
   a:visited {
     text-decoration: none;
+    color: inherit;
   }
 
   ul {
@@ -32,7 +36,7 @@ body {
   h1,
   h2,
   h3 {
-    font-size: 2rem; // 20 px
+    font-size: 1.6rem; // 16px
     font-weight: 400;
   }
 }

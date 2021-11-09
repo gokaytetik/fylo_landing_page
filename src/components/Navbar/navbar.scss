@@ -1,0 +1,30 @@
+.navbar {
+  width: 100%;
+  background-color: var(--beta);
+  color: var(--alpha);
+  padding: 0 15rem; // 150px
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    margin-top: 3rem; // 30px
+  }
+
+  &__menu {
+    display: flex;
+    font-family: var(--chi);
+  }
+
+  &__item {
+    margin-left: 7rem; // 70px
+  }
+
+  &__item:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
