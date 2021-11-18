@@ -1,7 +1,13 @@
+@import "../../style/global.scss";
+
 .footer {
   background: var(--delta);
   color: var(--alpha);
   padding: 0 5rem 5rem 5rem;
+
+  @include mobile {
+    padding: 3rem;
+  }
 
   &__getStarted {
     display: flex;
@@ -14,6 +20,10 @@
   .logo {
     img {
       width: 8%;
+
+      @include mobile {
+        width: 65%;
+      }
     }
   }
   &__container {
@@ -21,6 +31,10 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 5rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__location {
@@ -32,6 +46,10 @@
   }
   &__location-text {
     max-width: 50rem;
+
+    @include mobile {
+      margin-bottom: 3rem;
+    }
   }
 
   &__phone {
@@ -52,15 +70,28 @@
   }
   &__menu {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
   }
 
   &__menu-left {
     margin-right: 4rem;
+    @include mobile {
+      margin-bottom: 5rem;
+    }
   }
 
   &__menu-item {
     margin-top: 2rem;
     padding: 0 3rem;
+
+    @include mobile {
+      padding: 0;
+    }
   }
 
   &__menu-item:first-child {
@@ -69,7 +100,11 @@
   &__menu-item:hover {
     font-weight: bold;
   }
-
+  &__social {
+    @include mobile {
+      margin: auto;
+    }
+  }
   &__button {
     border: 2px solid white;
     border-radius: 100%;

@@ -1,3 +1,5 @@
+@import "../../style/global.scss";
+
 .btn {
   font-family: var(--chi);
   font-weight: 700;
@@ -20,6 +22,10 @@
 .btn--large {
   padding: 1.5rem 10rem;
   font-size: 1.8rem;
+
+  @include mobile {
+    padding: 1.5rem 7rem;
+  }
 }
 
 .btn--medium {

@@ -1,17 +1,33 @@
+@import "../../style/global.scss";
+
 .navbar {
   width: 100%;
   background-color: var(--beta);
   color: var(--alpha);
   padding: 0 15rem; // 150px
 
+  @include mobile {
+    padding: 0 2rem;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include mobile {
+      align-items: center;
+    }
   }
 
   &__logo {
-    margin-top: 3rem; // 30px
+    img {
+      margin-top: 3rem; // 30px
+      @include mobile {
+        margin-top: 0rem;
+        max-width: 8rem;
+      }
+    }
   }
 
   &__menu {
@@ -21,6 +37,11 @@
 
   &__item {
     margin-left: 7rem; // 70px
+
+    @include mobile {
+      margin-left: 2rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__item:hover {

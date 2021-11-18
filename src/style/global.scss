@@ -24,3 +24,13 @@
   --xsmall: 1.4rem; //14 px
   --xxsmall: 1rem; //10 px
 }
+
+//Responsive
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

@@ -1,12 +1,30 @@
+@import "../../style/global.scss";
+
 .container {
   display: flex;
   background: var(--gamma);
   color: var(--alpha);
   padding: 10rem 10rem;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
 }
 
 .left {
   width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  img {
+    @include mobile {
+      width: 90%;
+    }
+  }
 }
 
 .right {
@@ -18,17 +36,33 @@
   font-size: 1.8rem;
   margin-left: 5rem;
 
+  @include mobile {
+    width: 100%;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
   &__header {
     font-family: var(--chi);
     font-size: 3.5rem;
     font-weight: 700;
     width: 40%;
     margin-bottom: 2rem;
+
+    @include mobile {
+      width: 100%;
+      font-size: 2rem;
+    }
   }
 
   &__text {
     width: 75%;
     margin-bottom: 2.5rem;
+
+    @include mobile {
+      width: 100%;
+      font-size: 1.6rem;
+    }
   }
 
   &__link {

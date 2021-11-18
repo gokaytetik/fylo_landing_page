@@ -1,3 +1,5 @@
+@import "../../style/global.scss";
+
 .testimonial-card {
   max-width: 40rem;
   max-height: 40rem;
@@ -6,8 +8,15 @@
   border-radius: 0.5rem;
   box-shadow: 10px 7px 2px 1px rgba(33, 41, 60, 0.2);
 
+  @include mobile {
+    margin: 3rem 0;
+  }
+
   &__text {
     margin: 2rem 0;
+    @include mobile {
+      font-size: 1.2rem;
+    }
   }
 
   &__footer {
@@ -31,9 +40,16 @@
 
   &__name {
     font-weight: bold;
+    @include mobile {
+      font-size: 1.2rem;
+    }
   }
 
   &__title {
     font-size: 1.2rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 }
