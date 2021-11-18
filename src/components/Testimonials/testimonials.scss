@@ -1,0 +1,14 @@
+.testimonials-wrapper {
+  display: flex;
+  justify-content: space-around;
+  background: var(--gamma);
+  background-image: url(../../assets/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position-x: 12rem;
+  background-position-y: 7rem;
+  color: var(--alpha);
+  padding: 10rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 25rem;
+}

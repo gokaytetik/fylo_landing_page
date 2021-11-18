@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  background: var(--gamma);
+  color: var(--alpha);
+  padding: 10rem 10rem;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.8rem;
+  margin-left: 5rem;
+
+  &__header {
+    font-family: var(--chi);
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    width: 75%;
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theta);
+    border-bottom: 0.5px solid;
+    transition: all 0.3s ease;
+  }
+
+  &__link:hover {
+    color: var(--alpha);
+    #b {
+      fill: var(--alpha);
+    }
+  }
+
+  a {
+    margin-right: 1rem;
+    margin-bottom: 0.4rem;
+  }
+}

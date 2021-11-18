@@ -1,0 +1,39 @@
+.testimonial-card {
+  max-width: 40rem;
+  max-height: 40rem;
+  background: var(--epsilon);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 10px 7px 2px 1px rgba(33, 41, 60, 0.2);
+
+  &__text {
+    margin: 2rem 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__pic {
+    img {
+      border-radius: 10rem;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+}
