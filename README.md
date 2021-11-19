@@ -2,4 +2,4 @@
 
 Frontend Mentor Challenge
 
-fylo-landing-page.pages.dev
+https://fylo-landing-page.pages.dev/
